@@ -1,7 +1,8 @@
-# IT-Service-Desk-Dashboard
+# IT Service Desk Performance Dashboard
 
 ### [View the Live, Interactive Dashboard on Tableau Public](https://public.tableau.com/app/profile/daniele.vaccarella/viz/VaccarellaTechDashboardServiceDesk/Dashboard1)
 
+![Dashboard Screenshot](IT_Service_Desk_Dashboard.png)
 ---
 
 ### Project Overview
@@ -36,6 +37,18 @@ The following tools were used to bring this project to life, in order of applica
 *   **Technician Performance Analysis:** A central chart visualizes the current open workload for each technician, broken down by ticket priority. This allows for quick identification of workload balance and high-impact contributors.
 *   **Interactive Filtering:** The dashboard is fully interactive. Clicking on a technician or using the global filters allows a manager or technician to dynamically drill down into the data to explore specific trends and performance metrics.
 *   **Satisfaction & Trend Analysis:** A dual-axis chart tracks customer satisfaction scores against ticket volume over time, providing key insights into how workload and efficiency might impact customer perception.
+
+---
+
+### Dashboard Reasoning and Future Changes
+
+*   **Workload Distribution:** The data reveals that certain technicians consistently manage a higher volume of high-priority tickets, which may be an indication for management to review the workload for each team member.
+
+*   **Satisfaction Scores:** Some IT Technicians seem to be struggling in certain months with obtaining a high satisfaction score. For example, Peter Jones received a 2.00 average satisfaction score for the month of July, prompting a management review to determine the cause.
+
+*   **Future Enhancements:**
+    1.  Once I feel more comfortable with Python scripting, the next planned step for this dashboard is to create a Python script using the Pandas library to fully automate the ETL process. This would allow the dashboard to be refreshed on a daily schedule without manually pulling data from the database.
+    2.  Additionally, I would like to migrate the database from the local SQLite file to a dedicated MySQL server. This would make the data pipeline more scalable and robust, simulating a true production environment where multiple applications might need access to the data.
 
 ---
 
